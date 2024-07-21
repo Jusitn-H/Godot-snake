@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dopds6ps30naj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sq84h"]
+bg_color = Color(0.105882, 0.698039, 0.576471, 1)
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="ScorePanel" type="Panel" parent="."]
+offset_right = 1000.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sq84h")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 450.0
+offset_right = 550.0
+offset_bottom = 66.0
+scale = Vector2(0.956791, 0.796543)
+theme_override_font_sizes/font_size = 45
